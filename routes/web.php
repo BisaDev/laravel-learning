@@ -18,3 +18,6 @@ Route::get('/', function () {
 });
 
 Route::get('/post' ,    'PostController@index');
+Route::get('/jokes' ,    'JokesController@index');
+
+Route::resource('/item',       'ItemController' );
