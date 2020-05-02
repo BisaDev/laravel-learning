@@ -6,5 +6,7 @@ use Illuminate\Http\Request;
 
 class PostController extends Controller
 {
-    //
+    function index() {
+        return 'Sup fella';
+    }
 }
