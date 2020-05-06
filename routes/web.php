@@ -13,11 +13,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+
+
 Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/post' ,    'PostController@index');
-Route::get('/jokes' ,    'JokesController@index');
+Route::get('/post' ,                    'PostController@index');
+Route::get('/jokes' ,                   'JokesController@index');
+Route::get('/jokes/{id}' ,              'JokesController@show');
+Route::get('/jokes/create' ,            'JokesController@create');
 
-Route::resource('/item',       'ItemController' );
+Route::resource('/quiz',            'QuizController' );
+Route::resource('/item',            'ItemController' );

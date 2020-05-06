@@ -11,5 +11,18 @@ class JokesController extends Controller
 
         return view('Jokes', compact('jokes'));
     }
+
+    function create($id) {
+        $jokes = 'Create!';
+
+        return view('Jokes', compact('jokes'));
+    }
+
+    function show($id) {
+        $jokes = $id;
+
+        return view('Jokes', compact('jokes'));
+    }
+
 }
 

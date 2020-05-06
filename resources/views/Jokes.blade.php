@@ -1,5 +1,5 @@
 @extends('layout')
 
 @section('content')
-    <div>{{$jokes[0]}}</div>
+    <div>{{$jokes}}</div>
 @endsection
